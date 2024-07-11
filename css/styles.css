@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: auto;
+    height: 100%;
+    animation: slide 10s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0%); }
+    100% { transform: translateX(0%); }
+}
+
+.highlights {
+    text-align: center;
+    padding: 20px;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.staff h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.staff-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.staff-member {
+    max-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.staff-member img {
+    width: 100%;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.staff-member h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.staff-member p {
+    font-size: 1em;
+    color: #555;
+}
+
+.contact form, .order form, .register form, .login form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact form label, .order form label, .register form label, .login form label {
+    margin: 10px 0 5px;
+    
+}
+
+.contact form input, .order form input, .register form input, .login form input, .contact form textarea, .order form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button, .order form button, .register form button, .login form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover, .order form button:hover, .register form button:hover, .login form button:hover {
+    background: #555;
+}
+
+.menu-category {
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
